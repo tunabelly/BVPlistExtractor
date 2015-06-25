@@ -325,7 +325,7 @@ NSData *_BVMachOSectionFromMachOHeader64(char *addr, long bytes_left, char *segn
             goto END_FUNCTION;
         }
         
-        if (lc->cmd != LC_SEGMENT) {
+        if (lc->cmd != LC_SEGMENT_64) {
             addr += lc->cmdsize;
             continue;
         }
